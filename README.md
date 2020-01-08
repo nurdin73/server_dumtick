@@ -1,9 +1,9 @@
 # server_dumtick
 link untuk get categories = https://dumtick-app.herokuapp.com/api/v1/categories <br />
-link untuk get event per category = http://localhost:5000/api/v1/category/${category_id}/events <br />
-link untuk get event by ID = https://dumtick-app.herokuapp.com/api/v1/event/${event_id} <br />
+link untuk get event per category = http://localhost:5000/api/v1/category/:id/events <br />
+link untuk get event by ID = https://dumtick-app.herokuapp.com/api/v1/event/:id <br />
 link untuk menambahkan event = https://dumtick-app.herokuapp.com/api/v1/event <br />
-link untuk get event todays = https://dumtick-app.herokuapp.com/api/v1/events?start_time=${tgl awal}&end_time=${tanggal akhir} <br />
+link untuk get event todays = https://dumtick-app.herokuapp.com/api/v1/events?start_time=starttgl&end_time=endtgl <br />
 link untuk get event ongoing = https://dumtick-app.herokuapp.com/api/v1/ongoing?startTime=${onGoing} <br />
 link untuk get event by title = https://dumtick-app.herokuapp.com/api/v1/events?title=${query.get("title")} <br />
 link untuk get favorite = https://dumtick-app.herokuapp.com/api/v1/user/favorites <br />
