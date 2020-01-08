@@ -1,6 +1,9 @@
 # server_dumtick
+https://dumtick-app.herokuapp.com
+
+
 link untuk get categories = https://dumtick-app.herokuapp.com/api/v1/categories <br />
-link untuk get event per category = http://localhost:5000/api/v1/category/:id/events <br />
+link untuk get event per category = https://dumtick-app.herokuapp.com/api/v1/category/:id/events <br />
 link untuk get event by ID = https://dumtick-app.herokuapp.com/api/v1/event/:id <br />
 link untuk menambahkan event = https://dumtick-app.herokuapp.com/api/v1/event <br />
 link untuk get event todays = https://dumtick-app.herokuapp.com/api/v1/events?start_time=starttgl&end_time=endtgl <br />
