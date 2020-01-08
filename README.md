@@ -17,7 +17,7 @@ if (hari < 10) { <br />
   // eslint-disable-next-line no-self-assign <br />
   hari = hari; <br />
 } <br />
-let tgl = date.getFullYear() + "-" + bln + "-" + hari; <br />
+let tgl = date.getFullYear() + "-" + bln + "-" + hari; //ini tanggal mulai atau (startTgl) <br />
 const dateEnd = new Date(); <br />
 dateEnd.setDate(dateEnd.getDate() + 1); <br />
 dateEnd.setMonth(dateEnd.getMonth()); <br />
@@ -35,7 +35,7 @@ if (hari1 < 10) { <br />
   // eslint-disable-next-line no-self-assign <br />
   hari1 = hari1; <br />
 } <br />
-let endTgl = dateEnd.getFullYear() + "-" + endBln + "-" + hari1; <br />
+let endTgl = dateEnd.getFullYear() + "-" + endBln + "-" + hari1; // ini tgl akhir (endTgl) <br />
 
 
 
@@ -58,7 +58,7 @@ if (hariOngoing < 10) {<br />
   // eslint-disable-next-line no-self-assign<br />
   hariOngoing = hariOngoing;<br />
 }<br />
-let onGoing = dateOngoing.getFullYear() + "-" + blnOngoing + "-" + hariOngoing;<br />
+let onGoing = dateOngoing.getFullYear() + "-" + blnOngoing + "-" + hariOngoing; // ini adalah ongoing <br />
 
 
 
@@ -66,8 +66,9 @@ link untuk get categories = https://dumtick-app.herokuapp.com/api/v1/categories 
 link untuk get event per category = https://dumtick-app.herokuapp.com/api/v1/category/:id/events <br />
 link untuk get event by ID = https://dumtick-app.herokuapp.com/api/v1/event/:id <br />
 link untuk menambahkan event = https://dumtick-app.herokuapp.com/api/v1/event <br />
-link untuk get event todays = https://dumtick-app.herokuapp.com/api/v1/events?start_time=starttgl&end_time=endtgl <br />
-link untuk get event ongoing = https://dumtick-app.herokuapp.com/api/v1/ongoing?startTime=${onGoing} <br />
+link untuk get event todays = https://dumtick-app.herokuapp.com/api/v1/events?start_time=starttgl&end_time=endtgl <br /> 
+maksud starttgl adalah tanggal mulainya. cara membuat tanggal mulai seperti diatas (fungsi) dan maksud endtgl adalah tgl akhir event nya cara membuat seperti fungsi diatas
+link untuk get event ongoing = https://dumtick-app.herokuapp.com/api/v1/ongoing?startTime=${onGoing} ongoing adalah nama fungsi untuk mendapatkan event antara besok dan lima hari kedepan .. cara membuatnya adalah seperti fungsi diatas <br />
 link untuk get event by title = https://dumtick-app.herokuapp.com/api/v1/events?title=${query.get("title")} <br />
 link untuk get favorite = https://dumtick-app.herokuapp.com/api/v1/user/favorites <br />
 link untuk get payment yang sudah di apporoved = https://dumtick-app.herokuapp.com/api/v1/order?status=approved <br />
