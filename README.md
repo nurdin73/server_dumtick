@@ -79,6 +79,7 @@ link untuk add favorite dan delete favorite = https://dumtick-app.herokuapp.com/
 
 link untuk register = https://dumtick-app.herokuapp.com/api/v1/register <br />
 link untuk login = https://dumtick-app.herokuapp.com/api/v1/login <br />
+link untuk get profile = https://dumtick-app.herokuapp.com/api/v1/user
 
 
 untuk url map bisa diambil dari embed hasil gmap
